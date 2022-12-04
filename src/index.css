@@ -1,0 +1,87 @@
+
+.App{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.location-residents{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+
+}
+
+.resident-card{
+  
+  background-color: #062226;
+  border-radius: 3rem 0rem;
+  color: white;
+
+}
+
+.resident-card_header {
+  position: relative;
+}
+
+
+.resident-card_status {
+  display: flex;
+  align-items: center;
+  gap:10px;
+  position: absolute;
+  top: 20px;
+  background-color: #062226;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+  
+}
+
+.circle{
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  
+}
+ .circle.Alive{
+  background-color: #4AB648;
+ }
+
+ .circle.Dead{
+  background-color: #B94343;
+ }
+
+ .circle.unknown{
+  background-color: #938686;
+
+ }
+
+
+
+.resident-card-body{
+  padding: 1 rem;
+  
+
+  
+}
+
+.resident-card-body>h2{
+  margin: 1rem;
+}
+
+.resident-card-body >ul{
+  padding: 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  
+}
+
+.resident-card-body >ul >li{
+  display: flex;
+  flex-direction: column;
+  color: #7E7E7E  
+}

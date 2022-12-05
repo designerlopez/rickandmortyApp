@@ -15,7 +15,7 @@ useEffect(() => {
 
 
 
-console.log(urlResident);
+
   return (
     <article className='resident-card'>
         

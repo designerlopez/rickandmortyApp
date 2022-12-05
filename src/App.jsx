@@ -51,14 +51,19 @@ function App() {
       <form className="form" onSubmit={handleSubmit}>
         <input
           id="searchValue"
+          list={<LocationFilter/>}
           onChange={handleChangeInput}
           type="text"
           placeholder="search your dimension"
+
         />
+        
         <button type="submit">Search</button>
       </form>
       </div>
-    {/*   <LocationFilter locationName={locationName} getNewLocation={getNewLocation}/> */}
+
+      <LocationFilter locationName={locationName} getNewLocation={getNewLocation}/>
+    
       <LocationInfo location={location} />
       <ResidentList location ={location}/>
     </div>

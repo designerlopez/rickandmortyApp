@@ -1,9 +1,18 @@
 
+html{
+  background: linear-gradient( #060930, #29a01e);
+}
+body{
+  max-width: 1200px;
+  margin: auto;
+
+
+}
 .App{
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient( #060930, #29a01e);
+  
   color: white;
 }
 
@@ -13,7 +22,6 @@
   /* background-color: red; */
   background-image: url("https://scontent-bog1-1.xx.fbcdn.net/v/t39.30808-6/317992967_5687077421384045_4937431817927328303_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGL3kKMa_qmS-41zzvxMP4BKMIw6G2oCrcowjDobagKt4FNOS-g1s6JDKl5YRs3rLm-1tjMOTJEZUMbk7K4FckP&_nc_ohc=V3cvabE7Ty0AX8ayXvs&_nc_ht=scontent-bog1-1.xx&oh=00_AfCNSH1vXWcNrX-yotWtqxkEO51FpcgC7zxfTAx6pRPQVA&oe=63917353");
   background-repeat: no-repeat;
-  
   display: flex;
   justify-content: center;
   align-items: flex-end;

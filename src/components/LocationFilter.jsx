@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 
 const LocationFilter = ({locationName, getNewLocation}) => {
 
-    const [locationOptions, setLocationOptions] = useState()
+    const [locationOptions, setLocationOptions] = useState([])
     useEffect(() => {
        
         const URL=`https://rickandmortyapi.com/api/location?name=${locationName}`
@@ -13,15 +13,23 @@ const LocationFilter = ({locationName, getNewLocation}) => {
         .catch(err=>console.log(err))
 
     }, [locationName])
+
+    console.log(locationOptions.value);
     
 
   return (
     
         <ul>
            { 
-           locationOptions?.map(locationOption=><li onClick={()=>getNewLocation(locationOption.URL)} 
-            key={locationOption.url}>{locationOption.name}</li>)
+           locationOptions?.map(locationOption=><option onClick={()=>getNewLocation(locationOption.url)} 
+            key={locationOption.url} value={locationName.name}>
+             {locationOption.name}</option>)
+             
            }
+           
+          
+
+           
 
         </ul>
         

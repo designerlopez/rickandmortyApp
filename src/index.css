@@ -60,10 +60,10 @@ button{
 }
 
 
-@media (max-width:370px){
+@media (max-width:656px){
   .location-info{
     background-color: #062226;
-    width: 20rem;
+    width: 19rem;
     display: flex;
     flex-wrap: wrap;
     margin: 2rem auto;
@@ -82,14 +82,23 @@ button{
   .header-App{
     width: 100%;
     background-image: url("https://fondosmil.com/fondo/27338.png");
-    height: 600px;    
+    height: 300px;    
     display: flex;
     justify-content: center;
     align-items: flex-end;
     background-size: cover;
     
-    
-  
+  }
+
+  .locationFilter{
+    display: flex;
+    background-color: red;
+    flex-wrap: wrap;
+
+  }
+
+  .ul_locationfilter{
+    background:radial-gradient(black, transparent)
   }
   
 }

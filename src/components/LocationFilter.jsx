@@ -14,16 +14,16 @@ const LocationFilter = ({locationName, getNewLocation}) => {
 
     }, [locationName])
 
-    console.log(locationOptions.value);
+  
     
 
   return (
     
-        <ul>
+        <ul className='ul_locationfilter'>
            { 
-           locationOptions?.map(locationOption=><option onClick={()=>getNewLocation(locationOption.url)} 
+           locationOptions?.map(locationOption=><li onClick={()=>getNewLocation(locationOption.url)} 
             key={locationOption.url} value={locationName.name}>
-             {locationOption.name}</option>)
+             {locationOption.name}</li>)
              
            }
            

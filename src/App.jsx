@@ -49,20 +49,22 @@ function App() {
     <div className="App">
       <div className="header-App">
       <form className="form" onSubmit={handleSubmit}>
+        <div className="filter_container">
         <input
           id="searchValue"
-          list={<LocationFilter/>}
           onChange={handleChangeInput}
           type="text"
           placeholder="search your dimension"
-
-        />
+          />
+          <LocationFilter className="locationFilter" locationName={locationName} getNewLocation={getNewLocation}/>
+        
+        </div>
         
         <button type="submit">Search</button>
       </form>
       </div>
 
-      <LocationFilter locationName={locationName} getNewLocation={getNewLocation}/>
+      
     
       <LocationInfo location={location} />
       <ResidentList location ={location}/>
